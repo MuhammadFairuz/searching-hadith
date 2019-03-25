@@ -22,7 +22,7 @@
                 <div class="panel-heading">What's QAS Hadits?
                     <span class="pull-right clickable panel-toggle"><em class="fa fa-toggle-up"></em></span></div>
                 <div class="panel-body">
-                    <p> QAS_HADITS (Query Answering System) for searching hadith is my last project excatly my undergraduate thesis project. this system will implement naive bayes method for classify data and to give the best feedback for user query.
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at sodales nisl. Donec malesuada orci ornare risus finibus feugiat.
                         </p>
                 </div>
             </div>

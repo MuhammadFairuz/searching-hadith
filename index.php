@@ -138,6 +138,18 @@
                     </a></li>
             </ul>
         </li>
+
+        <?php
+            if (isset($_SESSION['username']) and isset($_SESSION['password'])) {
+                ?>
+                <li><a href="aksilogout.php"><em class="fa fa-power-off">&nbsp;</em>Logout</a></li>
+                <?php
+            }else{
+             ?>
+                <li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em>Login</a></li>
+                <?php
+            }
+            ?>
     </ul>
 </div>
 

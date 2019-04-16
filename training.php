@@ -1,10 +1,12 @@
+<meta charset="utf-8">
 <?php
 include('koneksi.php');
 ?>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <div class="row">
     <ol class="breadcrumb">
         <li><a href="#">
-                <em class="fa fa-list"></em>
+                <em class="fa fa-list"></em> 
             </a></li>
         <li class="active">Data Set</li>
     </ol>
@@ -20,12 +22,13 @@ include('koneksi.php');
                         <th data-field="nomor_hadis" data-sortable="true">No_Hadith</th>
                         <th data-field="kitab" data-sortable="true">Kitab</th>
                         <th data-field="bab" data-sortable="true">Bab</th>
+                        <th data-field="hadits" data-sortable="true">Hadits</th>
                         <th data-field="isi" data-sortable="true">Isi</th>
-
                     </tr>
                     </thead>
                     <tbody>
                     <?php
+                    mysqli_query($connect,"SET CHARACTER SET utf8");
                     $query = mysqli_query($connect, "SELECT * FROM tb_hadis ORDER by nomor_hadis ASC") or die(("Can't Connect Database"));
                     $no = 1;
                     while ($row = mysqli_fetch_assoc($query)) {
@@ -34,6 +37,7 @@ include('koneksi.php');
                                 <td><?php echo $no;?></td>
                                 <td><?php echo $row['kitab'];?></td>
                                 <td><?php echo $row['bab'];?></td>
+                                <td><?php echo $row['hadits'];?></td>
                                 <td><?php echo $row['isi'];?></td>
                             </tr>
                         <?PHP

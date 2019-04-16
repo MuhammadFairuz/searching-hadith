@@ -111,7 +111,7 @@
     <ul class="nav menu" >
         <li class=""><a href="home.html"><em class="fa fa-home">&nbsp;</em> Home</a></li>
 
-        <li class="parent"><a data-toggle="collapse" href="#sub item 1">
+        <li class="parent"><a data-toggle="collapse" href="#sub-item-1">
                 <em class="fa fa-desktop">&nbsp;</em> Applikasi <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right">
                 <em class="fa fa-chevron-circle-down"></em></span>
             </a>
@@ -138,18 +138,6 @@
                     </a></li>
             </ul>
         </li>
-
-        <?php
-            if (isset($_SESSION['username']) and isset($_SESSION['password'])) {
-                ?>
-                <li><a href="aksilogout.php"><em class="fa fa-power-off">&nbsp;</em>Logout</a></li>
-                <?php
-            }else{
-             ?>
-                <li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em>Login</a></li>
-                <?php
-            }
-            ?>
     </ul>
 </div>
 

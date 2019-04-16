@@ -1,6 +1,4 @@
-<?php
-if(isset($_SESSION['username']) and isset($_SESSION['password'])){
-?>
+
     <div class="row">
         <ol class="breadcrumb">
             <li><a href="#">
@@ -44,10 +42,4 @@ if(isset($_SESSION['username']) and isset($_SESSION['password'])){
             return false;
         }
     </script>
-<?php
-}else{
-    ?>
-    <p><code>Hak Akses ADMIN. Silakan <a href="login.html">login</a> terlebih dahulu!</code></p>
-<?php
-}
-?>
+
